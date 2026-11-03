@@ -1,7 +1,7 @@
 /* Formulaire de rétractation : envoie la demande au script Google (Apps Script),
    qui l'enregistre et envoie aussitôt l'accusé de réception daté. */
 (function () {
-  var ADRESSE_SCRIPT = "ADRESSE_APPS_SCRIPT";
+  var ADRESSE_SCRIPT = "https://script.google.com/macros/s/AKfycbzh8PBzG-4k-tSCBSoZmBR6Kj7019-gNHKEJcf2sVIEQe8WfESP3Xk9CU7AmQx-OV7oxw/exec";
 
   var form = document.getElementById("retractation");
   var bouton = document.getElementById("envoyer");
