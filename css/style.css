@@ -53,7 +53,7 @@ strong { font-weight: 700; }
 
 /* En-tête */
 .entete { text-align: center; }
-.logo { width: 50px; height: 50px; display: block; margin: 0 auto 18px; padding: 3px; border-radius: 50%; background: linear-gradient(135deg, #9FCDEE, #F3DCCB 55%, #FFB37A); box-shadow: 0 6px 16px -8px rgba(20, 33, 61, .5); }
+.logo { width: 54px; height: 54px; display: block; margin: 0 auto 18px; padding: 5px; border-radius: 50%; background: linear-gradient(135deg, #9FCDEE, #F3DCCB 55%, #FFB37A); box-shadow: 0 6px 16px -8px rgba(20, 33, 61, .5); }
 .photo {
   width: 164px; height: 164px; margin: 0 auto; border-radius: 50%;
   padding: 4px; background: var(--ring);
