@@ -23,6 +23,7 @@
 }
 
 :root {
+  color-scheme: light only;
   --nuit: #14213D;
   --creme: #FFFBF5;
   --ciel: #D6EEFB;
