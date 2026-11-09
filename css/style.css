@@ -39,8 +39,10 @@ html { background: #FFD9BA; -webkit-text-size-adjust: 100%; }
 body {
   font-family: "DM Sans", system-ui, sans-serif;
   font-size: 17px; line-height: 1.6; color: var(--nuit);
-  background: var(--sunrise); min-height: 100vh;
+  min-height: 100vh;
 }
+/* Le dégradé tient dans chaque écran et reste en place quand on fait défiler. */
+body::before { content: ""; position: fixed; inset: 0; z-index: -1; background: var(--sunrise); }
 img { max-width: 100%; }
 a { color: var(--nuit); text-underline-offset: 3px; }
 a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
