@@ -28,7 +28,7 @@ function calendrierVictor(idConteneur, lienCal) {
   });
   Cal.ns[ns]("ui", {
     theme: "light",
-    hideEventTypeDetails: false,
+    hideEventTypeDetails: true,
     layout: "month_view",
     cssVarsPerTheme: {
       light: {
