@@ -158,3 +158,170 @@ h1 { font-family: "Fraunces", Georgia, serif; font-weight: 600; font-size: 34px;
   .pied nav a { display: block; }
   .pied .sep, .pied nav br { display: none; }
 }
+
+/* Accueil, version du 16/11 */
+.slogan { font-family: "Fraunces", Georgia, serif; font-weight: 600; font-size: 25px; line-height: 1.3; margin-top: 22px; letter-spacing: -0.005em; }
+.slogan.b { font-style: italic; font-weight: 500; font-size: 23px; line-height: 1.35; margin: 22px auto 0; padding: 16px 6px 0; max-width: 330px; position: relative; }
+.slogan.b::before { content: ""; position: absolute; top: 0; left: 50%; width: 56px; height: 2px; margin-left: -28px; background: var(--nuit); opacity: .35; border-radius: 2px; }
+.sous-bouton { font-size: 15px; line-height: 1.5; text-align: center; margin: -2px 8px 8px; }
+.btn.clair { background: transparent; color: var(--nuit); border: 1.5px solid rgba(20, 33, 61, .25); min-height: 50px; font-size: 16px; }
+.btn.clair:hover { background: rgba(255, 251, 245, .6); }
+.insecable { white-space: nowrap; }
+.petit { font-size: 15px; margin-top: 12px; text-align: center; }
+
+.photo-parcours { display: block; width: min(100%, 250px); margin: 0 auto; }
+.photo-parcours img { display: block; width: 100%; height: auto; border-radius: 20px; border: 5px solid #fff; box-shadow: 0 18px 34px -14px rgba(20, 33, 61, .55); }
+.etiquettes { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; margin: 20px 0 16px; }
+.etiquettes li { background: var(--ciel); border-radius: 999px; padding: 6px 13px; font-size: 15px; font-weight: 500; line-height: 1.35; }
+.parcours .lien-histoire { margin-top: 14px; }
+
+.pour-toi { list-style: none; }
+.pour-toi li { position: relative; padding-left: 26px; }
+.pour-toi li + li { margin-top: 12px; }
+.pour-toi li::before { content: ""; position: absolute; left: 6px; top: .62em; width: 8px; height: 8px; border-radius: 50%; background: var(--nuit); }
+.conclusion { margin-top: 20px; font-weight: 500; }
+
+.surtitre { font-family: "Fraunces", Georgia, serif; font-style: italic; font-size: 16px; margin-bottom: 2px; }
+.frise { list-style: none; counter-reset: etape; margin-top: 20px; }
+.frise li { position: relative; padding: 0 0 22px 50px; counter-increment: etape; }
+.frise li:last-child { padding-bottom: 0; }
+.frise li::before { content: counter(etape); position: absolute; left: 0; top: 0; width: 34px; height: 34px; border-radius: 50%; background: var(--ciel); color: var(--nuit); font: 600 17px/34px "Fraunces", Georgia, serif; text-align: center; }
+.frise li::after { content: ""; position: absolute; left: 16px; top: 40px; bottom: 4px; width: 2px; background: rgba(20, 33, 61, .18); }
+.frise li:last-child::after { display: none; }
+.frise h3 { font-family: "Fraunces", Georgia, serif; font-weight: 600; font-size: 19px; line-height: 34px; }
+.frise p { margin-top: 2px; }
+
+.offres { list-style: none; display: grid; gap: 14px; margin: 18px 0 20px; }
+.offre { background: #fff; border-radius: 18px; padding: 16px 15px; border: 1.5px solid rgba(20, 33, 61, .16); box-shadow: 0 10px 22px -18px rgba(20, 33, 61, .5); }
+.offre.conseil { border: 2px solid var(--nuit); }
+.offre .formule { font-size: 18px; line-height: 1.3; }
+.etiquette-conseil { display: inline-block; background: var(--nuit); color: var(--creme); font-size: 13px; font-weight: 700; letter-spacing: .02em; padding: 4px 11px; border-radius: 999px; margin-bottom: 8px; }
+.avis { margin-top: 10px; padding-top: 10px; border-top: 1px dashed rgba(20, 33, 61, .22); }
+.carte .avis p + p { margin-top: 4px; }
+.avis-titre { display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 700; letter-spacing: .02em; }
+.avis-titre img { width: 30px; height: 30px; border-radius: 50%; border: 2px solid var(--ciel); flex: none; }
+.avis p:last-child { font-style: italic; font-size: 16px; line-height: 1.5; }
+.carte .cadeau { margin-top: 12px; background: var(--nuit); color: var(--creme); border-radius: 12px; padding: 10px 13px; font-size: 15px; font-weight: 500; line-height: 1.45; }
+.demarrer { font-family: "Fraunces", Georgia, serif; font-weight: 600; font-size: 20px; margin-top: 4px; }
+.depart { list-style: none; margin-top: 8px; }
+.depart li { position: relative; padding-left: 26px; }
+.depart li + li { margin-top: 10px; }
+.depart li::before { content: ""; position: absolute; left: 6px; top: .62em; width: 8px; height: 8px; border-radius: 50%; background: var(--nuit); }
+.carte .apres { margin-top: 14px; }
+
+.faq details { border-top: 1px solid rgba(20, 33, 61, .14); }
+.faq details:last-child { border-bottom: 1px solid rgba(20, 33, 61, .14); }
+.faq summary { cursor: pointer; list-style: none; position: relative; padding: 14px 36px 14px 0; min-height: 52px; font-weight: 700; line-height: 1.4; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; position: absolute; right: 6px; top: 50%; transform: translateY(-50%); font-size: 24px; font-weight: 400; line-height: 1; }
+.faq details[open] summary::after { content: "–"; }
+.faq details p { padding-bottom: 16px; }
+
+.fin { margin-top: 44px; text-align: center; }
+.mot-fin { font-family: "Fraunces", Georgia, serif; font-weight: 500; font-size: 22px; line-height: 1.4; margin-bottom: 24px; }
+.question-fin { display: block; margin-top: 10px; font-weight: 600; font-style: italic; font-size: 25px; }
+
+/* Blocs plus compacts sur téléphone, pour les voir presque en entier d'un coup d'œil */
+#pour-toi, #concretement, #nutrition { padding-left: 18px; padding-right: 18px; }
+.pour-toi li { font-size: 16px; line-height: 1.45; }
+.pour-toi li + li { margin-top: 9px; }
+#pour-toi .conclusion { font-size: 16px; line-height: 1.45; margin-top: 16px; }
+.frise { margin-top: 16px; }
+.frise li { padding-bottom: 14px; }
+.frise p { font-size: 16px; line-height: 1.45; }
+.offres { gap: 12px; }
+.frise li { padding-left: 44px; padding-bottom: 12px; }
+.frise li::before { width: 30px; height: 30px; line-height: 30px; font-size: 16px; }
+.frise li::after { left: 14px; top: 36px; }
+.frise h3 { line-height: 30px; font-size: 18px; }
+#concretement h2 { margin-bottom: 0; }
+#concretement { padding-top: 20px; padding-bottom: 18px; }
+#concretement .frise li { padding-bottom: 10px; }
+#concretement .frise li:last-child { padding-bottom: 0; }
+
+/* Cartes de prix, version 2 du 16/11 */
+.offre { border: 2px solid rgba(20, 33, 61, .28); padding: 16px 16px 15px; }
+.offre.vedette { border-color: var(--nuit); }
+.duree { font-size: 15px; font-weight: 700; letter-spacing: .03em; text-transform: uppercase; }
+.carte .prix { margin-top: 2px; font-size: 16px; line-height: 1.2; }
+.prix strong { font-family: "Fraunces", Georgia, serif; font-weight: 600; font-size: 32px; letter-spacing: -0.01em; margin-right: 2px; }
+.avis-titre img { width: 44px; height: 44px; border: 3px solid #fff; box-shadow: 0 6px 14px -6px rgba(20, 33, 61, .55); }
+.carte .cadeau { background: #FFF1E6; color: var(--nuit); border: 1.5px dashed rgba(20, 33, 61, .4); font-weight: 600; }
+.btn.clair.visible { background: #fff; border: 2px solid var(--nuit); font-weight: 700; }
+.btn.clair.visible:hover { background: var(--ciel); }
+.faq details p:not(:last-child) { padding-bottom: 0; }
+
+/* Version 3 du 16/11 */
+.reseaux { flex-direction: column; align-items: center; gap: 10px; }
+.reseaux a.insta { min-width: 290px; justify-content: center; }
+
+.diplomes { list-style: none; margin: 20px 0 16px; }
+.diplomes li { display: flex; align-items: center; gap: 12px; padding: 9px 0; font-weight: 600; font-size: 16px; line-height: 1.35; }
+.diplomes li + li { border-top: 1px dashed rgba(20, 33, 61, .22); }
+.diplomes svg { width: 26px; height: 26px; flex: none; padding: 5px; border-radius: 50%; background: var(--nuit); color: var(--creme); }
+
+.frise li::before { background: var(--nuit); color: var(--creme); }
+
+.offre, .offre.vedette { border: 1.5px solid var(--nuit); }
+.etiquette-offre { display: inline-block; background: var(--nuit); color: var(--creme); font-size: 14px; font-weight: 700; padding: 5px 12px; border-radius: 999px; margin-bottom: 10px; }
+.carte .cadeau { background: transparent; border: 0; padding: 10px 0 0; margin-top: 12px; border-top: 1px dashed rgba(20, 33, 61, .22); border-radius: 0; font-size: 15px; font-weight: 500; color: var(--nuit); }
+.avis-titre img { width: 48px; height: 64px; border-radius: 10px; object-fit: cover; }
+
+.btn.sport { min-height: 54px; font-weight: 700; }
+#concretement h2 { font-size: 22px; }
+
+/* Version 4 du 16/11 */
+.diplomes { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 20px 0 18px; }
+.diplomes li { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 2px; padding: 14px 8px 12px; background: #fff; border: 1.5px solid var(--nuit); border-radius: 16px; font-weight: 400; }
+.diplomes li + li { border-top: 1.5px solid var(--nuit); }
+.diplomes .gros { font-family: "Fraunces", Georgia, serif; font-weight: 600; font-size: 24px; line-height: 1.1; }
+.diplomes .petit-titre { font-size: 14px; line-height: 1.3; }
+
+.frise li::before { background: #FDE7D5; color: var(--nuit); box-shadow: inset 0 0 0 1.5px var(--nuit); }
+
+.offre.vedette { border-width: 2px; padding-top: 0; overflow: hidden; }
+.bandeau-offre { margin: 0 -16px 14px; padding: 10px 14px; background: var(--nuit); color: var(--creme); font-weight: 700; font-size: 15px; text-align: center; }
+.carte .cadeau { border-top: 0; margin-top: 12px; padding: 10px 12px; background: #FDE7D5; border-radius: 12px; font-size: 15px; font-weight: 600; }
+
+.faq mark { background: linear-gradient(transparent 55%, #FBD3B4 55%); color: inherit; padding: 0 1px; }
+
+.btn.douce { background: #FDE7D5; color: var(--nuit); border: 1.5px solid var(--nuit); min-height: 52px; font-weight: 600; font-size: 16px; box-shadow: none; }
+.btn.douce:hover { background: #FBD9BF; }
+.bandeau-offre { font-size: 14px; padding: 10px 8px; white-space: nowrap; }
+
+/* Version 5 du 16/11 */
+.frise li::before { background: #fff; color: var(--nuit); box-shadow: inset 0 0 0 1.5px var(--nuit); }
+.diplomes li { box-shadow: 0 10px 22px -18px rgba(20, 33, 61, .5); }
+.bandeau-offre { white-space: normal; padding: 11px 10px 10px; line-height: 1.35; }
+.bandeau-offre .ligne1 { display: block; font-size: 15px; font-weight: 700; }
+.bandeau-offre .ligne2 { display: block; font-size: 13.5px; font-weight: 500; opacity: .9; margin-top: 2px; }
+.faq .cas { display: block; font-family: "Fraunces", Georgia, serif; font-style: italic; font-weight: 500; font-size: 18px; line-height: 1.35; margin-bottom: 2px; }
+.lien-sport { display: inline-flex; align-items: center; gap: 6px; margin-top: 16px; font-weight: 700; font-size: 18px; color: var(--nuit); text-underline-offset: 4px; text-decoration-thickness: 2px; }
+#sport .petit { text-align: left; }
+.bandeau-offre .ligne1 { font-size: 14px; white-space: nowrap; }
+
+/* Version 6 du 16/11 */
+.offre.vedette { padding-top: 16px; padding-bottom: 0; }
+.bandeau-offre.bas { margin: 14px -16px 0; padding: 12px 12px 13px; }
+.bandeau-offre.bas .ligne1 { font-size: 15px; white-space: normal; }
+.bandeau-offre.bas .ligne2 { font-size: 14px; }
+
+.cas-sport { list-style: none; margin: 10px 0 12px; }
+.cas-sport li { position: relative; padding-left: 26px; color: rgba(20, 33, 61, .78); }
+.cas-sport li + li { margin-top: 14px; }
+.cas-sport li::before { content: ""; position: absolute; left: 6px; top: .62em; width: 8px; height: 8px; border-radius: 50%; background: var(--nuit); }
+.faq .cas { display: block; font-family: inherit; font-style: normal; font-size: 17px; font-weight: 600; color: var(--nuit); margin-bottom: 3px; line-height: 1.45; }
+
+.pour-toi li { color: rgba(20, 33, 61, .78); }
+.pour-toi li strong { font-weight: 600; color: var(--nuit); }
+.pour-toi li + li { margin-top: 14px; }
+.bandeau-offre.bas .ligne1 { font-size: 14.5px; white-space: nowrap; }
+.vers-sport { display: inline-flex; align-items: center; gap: 8px; font-weight: 600; color: var(--nuit); text-decoration: none; border-bottom: 2px solid var(--nuit); padding-bottom: 2px; }
+.vers-sport svg { flex: none; }
+html { scroll-behavior: smooth; }
+.vers-sport { display: flex; align-items: flex-start; gap: 8px; margin-top: 8px; border-bottom: 0; padding: 0; color: var(--nuit); }
+.vers-sport svg { margin-top: 3px; }
+.vers-sport span { text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 1.5px; }
+.cas-sport { margin-bottom: 18px; }
+#sport { scroll-margin-top: 18px; }
+.chute-sport strong { font-weight: 600; }
